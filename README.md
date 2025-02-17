@@ -1,3 +1,3 @@
 # My personal website.
 
-penndraken.github.io
+[penndraken.github.io]
