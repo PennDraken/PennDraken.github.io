@@ -23,7 +23,7 @@ body {
 
   #gallery-image {
     max-width: 100%;
-    height: auto; /* Ensure responsive scaling for the logo */
+    height: auto;
   }
   
   .intro {
