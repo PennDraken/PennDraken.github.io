@@ -20,6 +20,11 @@ body {
     max-width: 25%;
     height: auto; /* Ensure responsive scaling for the logo */
   }
+
+  #gallery-image {
+    max-width: 100%;
+    height: auto; /* Ensure responsive scaling for the logo */
+  }
   
   .intro {
     font-style: italic;
@@ -61,6 +66,8 @@ body {
     box-sizing: border-box;
   }
   
+
+
   /* Mobile-specific adjustments */
   @media screen and (max-width: 768px) {
     body {
