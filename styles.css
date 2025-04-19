@@ -69,6 +69,34 @@ body {
     color: white;
     font-size: 0.9em;
   }
+
+
+  .project-div {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    align-items: start;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: lightblue 0px 0px 5px;
+    text-decoration: none; /* Remove default underline */
+    color: inherit;
+    margin: 20px;
+  }
+
+  .project-div:hover {
+    box-shadow: red 0px 0px 10px;
+    cursor: pointer;
+  }
+
+  .project-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-thumbnail {
+    width: 20%;
+  }
   
   /* General Reset */
   * {
