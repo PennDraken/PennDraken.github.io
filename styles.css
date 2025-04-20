@@ -81,7 +81,8 @@ body {
     box-shadow: lightblue 0px 0px 5px;
     text-decoration: none; /* Remove default underline */
     color: inherit;
-    margin: 20px;
+    margin: 0px;
+    margin-bottom: 20px;
   }
 
   .project-div:hover {
@@ -96,6 +97,7 @@ body {
 
   .project-thumbnail {
     width: 20%;
+    border-radius: 10px;
   }
   
   /* General Reset */
