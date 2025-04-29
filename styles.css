@@ -162,5 +162,25 @@ body {
     main {
       padding: 10px;
     }
+
+    .project-div {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .project-thumbnail {
+      width: 100%;
+      aspect-ratio: 5 / 2;
+    }
+
+    .row-div {
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+    }
+
+    .row-div img {
+      aspect-ratio: 10/2;
+    }
   }
   
