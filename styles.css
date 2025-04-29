@@ -97,6 +97,9 @@ body {
 
   .project-thumbnail {
     width: 20%;
+    /*Height should be 2/3 of width*/
+    aspect-ratio: 3 / 2;
+    object-fit: cover; /* Crops image */
     border-radius: 10px;
   }
   
