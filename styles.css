@@ -83,11 +83,15 @@ body {
     color: inherit;
     margin: 0px;
     margin-bottom: 20px;
+    overflow: hidden;
   }
 
-  .project-div:hover {
-    box-shadow: red 0px 0px 10px;
+  .project-div:hover,
+  .gallery-div:hover {
+    box-shadow: rgb(74, 121, 187) 0px 0px 10px;
     cursor: pointer;
+    transform: scale(1.01);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   }
 
   .project-text {
@@ -101,6 +105,41 @@ body {
     aspect-ratio: 3 / 2;
     object-fit: cover; /* Crops image */
     border-radius: 10px;
+    box-shadow: lightblue 0px 0px 5px;
+  }
+
+  .gallery-div {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: lightblue 0px 0px 5px;
+    text-decoration: none; /* Removes default underline */
+    color: inherit;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+
+  .gallery-text {
+    flex: 1;
+    text-align: center;
+  }
+
+  .row-div {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .row-div img {
+    width: 100%;
+    aspect-ratio: 4 / 2;
+    object-fit: cover; /* Crops image */
+    border-radius: 10px;
+    box-shadow: lightblue 0px 0px 5px;
   }
   
   /* General Reset */
