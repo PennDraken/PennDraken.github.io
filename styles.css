@@ -9,12 +9,29 @@ body {
     overflow-x: hidden; /* Prevent horizontal scrolling */
   }
   
-  header {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-  }
+header {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  overflow: hidden;
+  z-index: 1;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('gallery/norway/8.JPG');
+  background-size: cover;
+  background-position: center;
+  /* Lower brighness */
+  filter: brightness(0.5);
+  z-index: -30;
+}
 
   iframe {
     width: 100%;
@@ -28,6 +45,7 @@ body {
     /* height: auto; /* Ensure responsive scaling for the logo */
     width: 128px;
     height: 128px;
+    color: white;
   }
 
   #gallery-image {
@@ -97,6 +115,7 @@ body {
   .project-text {
     display: flex;
     flex-direction: column;
+    text-align: left;
   }
 
   .project-thumbnail {
@@ -118,6 +137,7 @@ body {
     color: inherit;
     margin-bottom: 20px;
     overflow: hidden;
+    height: 100%;
   }
 
   .gallery-text {
@@ -125,7 +145,7 @@ body {
     text-align: center;
   }
 
-  .row-div {
+  .grid-div {
     flex: 1;
     display: flex;
     flex-direction: row;
@@ -134,7 +154,7 @@ body {
     gap: 10px;
   }
 
-  .row-div img {
+  .grid-div img {
     width: 100%;
     aspect-ratio: 4 / 2;
     object-fit: cover; /* Crops image */
@@ -173,13 +193,13 @@ body {
       aspect-ratio: 5 / 2;
     }
 
-    .row-div {
-      flex-direction: column;
-      align-items: center;
+    .grid-div {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       height: 100%;
     }
 
-    .row-div img {
+    .grid-div img {
       aspect-ratio: 5/2;
     }
   }
