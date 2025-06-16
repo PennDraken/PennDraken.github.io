@@ -166,8 +166,34 @@ header::before {
   * {
     box-sizing: border-box;
   }
-  
 
+  .photo-gif-grid {
+    columns: 2;
+    width: 100%;
+    gap: 0;
+    margin-bottom: 0;
+    line-height: 0;
+  }
+
+  .photo-gif-grid img {
+    position: relative;
+    width: 100%;
+    transition-duration: 60ms;
+    z-index: 0;
+  }
+  
+  .photo-gif-grid img:hover {
+    width: 100%;
+    transform: scale(1.1);
+    transition-duration: 60ms;
+    z-index: 1000;
+  }
+
+  .photo-gif-grid:hover img:not(:hover) {
+    filter: blur(10px);
+    color: transparent;
+    transition-duration: 60ms;
+  }
 
   /* Mobile-specific adjustments */
   @media screen and (max-width: 768px) {
